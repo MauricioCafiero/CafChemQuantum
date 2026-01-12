@@ -1,7 +1,7 @@
 # CafChemQuantum
 Quantum Computing practice / teaching code in Q#, Qiskit and Cirq
 
-- Background: 
+- [Background](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/background.md) topics: 
   * quantum mechanics for quantum computing: basis states and superposition states
   * basics of Q# coding
 
