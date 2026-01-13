@@ -13,3 +13,4 @@ Quantum Computing practice / teaching code in Q#, Qiskit and Cirq
   * BB84 Quantum Key Distribution
   * B92 Quantum Key Distribution
   * EPR Quantum Key Distribution
+  * Eigenvalue solving (quantum phase estimation)
