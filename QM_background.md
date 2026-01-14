@@ -201,5 +201,6 @@ The resulting states can be called GHZ states:
 ## Teleportation
 
 ## Measurements
+Measurements can be carried out in different bases, and will thus have different results. For a two qubit system, measuring in the z, or computational basis means that the state:
 
 
