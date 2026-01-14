@@ -63,3 +63,13 @@ ResetAll([q1, q2])  // alternately use Reset(q1), etc...
 ## Operations and functions
 ## Loops and conditionals
 ### Appending arrays
+## Sample code
+[Here](https://github.com/MauricioCafiero/CafChemQuantum/tree/main/Qsharp), you can find Q# Code for:
+- Superposition
+- Entanglement
+- Entanglement swapping
+- Teleportation
+- BB84 Quantum Key Distribution
+- B92 Quantum Key Distribution
+- EPR Quantum Key Distribution
+- Eigenvalue solving (quantum phase estimation)
