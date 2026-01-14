@@ -1,10 +1,16 @@
 # CafChemQuantum
 Quantum Computing practice / teaching code in Q#, Qiskit and Cirq
 
-- [Background](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/QM_background.md) topics: 
-  * quantum mechanics for quantum computing: basis states and superposition states
-- [Basics of Q#](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qsharp_background.md) 
-  * basics of Q# coding
+- [Quantum mechanics Background](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/QM_background.md) topics: 
+  * Basis states and superposition states
+  * Gates
+  * Entanglement
+    
+- [Basics of Q#](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qsharp_basics.md) 
+  * basics of Q# strucutre
+  * variables
+  * operations and functions
+  * for loops and conditionals
 
 - [Q# Code](https://github.com/MauricioCafiero/CafChemQuantum/tree/main/Qsharp) for:
   * Superposition
