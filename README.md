@@ -2,9 +2,13 @@
 Quantum Computing practice / teaching code in Q#, Qiskit and Cirq
 
 - [Quantum mechanics Background](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/QM_background.md) topics: 
-  * Basis states and superposition states
-  * Gates
+  * Single qubit basis states
+  * Superposition
+  * Multi-qubit states
+  * Unitary transformation / gates
   * Entanglement
+  * Measurements
+  * Teleportation
     
 - [Basics of Q#](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qsharp_basics.md) 
   * basics of Q# strucutre
