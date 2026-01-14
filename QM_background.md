@@ -1,4 +1,12 @@
 # Quantum Mechanics
+- [Single qubit basis states](#basis-states)
+- [Superposition](#superposition-states)
+- [Multi-qubit states](#multi-qubit-states)
+- [Unitary transformation / gates](#unitary-transformations-or-gates)
+- [Entanglement](#entanglement)
+- [Measurements](#measurements)
+- [Teleportation](#teleportation)
+
 ## Basis states
 Quantum computing is based on quantum 2-level systems. These can be spin states for nuclei (some quantum computers are NMR-based):
 ```math
@@ -39,7 +47,22 @@ P(\ket{0}) = a^{2}
 ```math
 P(\ket{1}) = b^{2}
 ```
-## Unitary transformations / Gates
+## Multi qubit states
+### Multi-qubit basis states
+A two qubit state is shown as a product of one-qubit states:
+```math
+\psi = \ket{0}\ket{0} = \ket{00}
+```
+For n=two qubits, there are $2^n$ basis states:
+```math
+\ket{00} , \ket{01}, \ket{10}, \ket{11}
+```
+For n=three qubits, there are $2^n$ basis states:
+```math
+\ket{000} , \ket{001}, \ket{010}, \ket{100}, \ket{011}, \ket{101}, \ket{110}, \ket{111}
+```
+
+## Unitary transformations or Gates
 Unitary Transformations, or Gates, are operatios performed on qubit states. The most basic gate is the Hadamard gate, H, which puts the state into superposition:
 ```math
 \textbf{H} \ket{0} = \frac{1}{\sqrt{2}} (\ket{0} + \ket{1}) = \ket{+}  
@@ -81,20 +104,6 @@ R_{z}(\theta) \to R_{z}(\theta = \pi /4) = T
 ```
 Rotations around X and Y can be defined similarly.
 
-## Multi qubit states
-### Multi-qubit basis states
-A two qubit state is shown as a product of one-qubit states:
-```math
-\psi = \ket{0}\ket{0} = \ket{00}
-```
-For n=two qubits, there are $2^n$ basis states:
-```math
-\ket{00} , \ket{01}, \ket{10}, \ket{11}
-```
-For n=three qubits, there are $2^n$ basis states:
-```math
-\ket{000} , \ket{001}, \ket{010}, \ket{100}, \ket{011}, \ket{101}, \ket{110}, \ket{111}
-```
 ### Multi-qubit gates
 If we have a two qubit system and want to perform X on the first qubit and Z on the second, we show this as:
 ```math
@@ -195,12 +204,81 @@ Enatngled states for three qubit can be created by applying a second **CNOT** ga
 ```
 The resulting states can be called GHZ states:
 ```math
+\textbf{U} \ket{000}  = (\textbf{I} \otimes \textbf{CNOT}) (\textbf{CNOT} \otimes \textbf{I}) \frac{1}{\sqrt{2}} (\ket{000} + \ket{100})
+```
+```math
+\textbf{U} \ket{000}  = (\textbf{I} \otimes \textbf{CNOT}) \frac{1}{\sqrt{2}} (\ket{000} + \ket{110})
+```
+```math
 \textbf{U} \ket{000}  = \frac{1}{\sqrt{2}} (\ket{000} + \ket{111}) =  \ket{GHZ}
 ```
+## Measurements
+Measurements can be carried out in different bases, and will thus have different results. For a two qubit system, measuring in the z, or computational basis means that the state will collapse into either the 1 or 0 state, accoding to the square of the coefficient of each state. 
+```math
+qubit = \frac{1}{\sqrt{2}} (\ket{0} + \ket{1})
+```
+```math
+\text{Measure[PauliZ, qubit]} \to 0 (50\%) \text{and} 1 (50\%)
+```
+Phase does not affect the measurement:
+```math
+qubit = \frac{1}{\sqrt{2}} (\ket{0} - \ket{1})
+```
+```math
+\text{Measure[PauliZ, qubit]} \to 0 (50\%) \text{and} 1 (50\%)
+```
+Measuring in the x-basis means that $\ket{+}$ and $\ket{-}$ are the observables, so a measurement of a qubit in the |0> state would collapse into either $\ket{+}$ or $\ket{-}$ with a 50/50 probability of each:
+```math
+qubit = \ket{0}
+```
+```math
+\text{Measure[PauliX, qubit]} \to \ket{+} (50\%) \text{and} \ket{-} (50\%)
+```
+Measurement results are classical bits.
 
 ## Teleportation
-
-## Measurements
-Measurements can be carried out in different bases, and will thus have different results. For a two qubit system, measuring in the z, or computational basis means that the state:
+Teleportation is the process of destroying the description of a source qubit and recreating the same description on a target qubit elsewhere. The qubit itself does not get transported, but all the information that describes it does. The source qubit will be in an arbitrary state:
+```math
+\phi = a\ket{0} + b \ket{1}
+```
+we then create an entangled pair of messenger and target quibits as described above (with messenger as control):
+```math
+\ket{\Theta^{+}} = \frac{1}{\sqrt{2}} (\ket{00} + \ket{11}) 
+```
+Our total system is:
+```math
+\Psi = (a\ket{0} + b \ket{1}) \frac{1}{\sqrt{2}} (\ket{00} + \ket{11}) 
+```
+```math
+\Psi = \frac{1}{\sqrt{2}} (a\ket{000} + a\ket{011} + b \ket{100} + b \ket{111})
+```
+We then perform a reverse entanglement on the source and messenger qubits, with source as the control:
+```math
+(\textbf{H} \otimes \textbf{I} \otimes \textbf{I}) (\textbf{CNOT} \otimes \textbf{I}) \frac{1}{\sqrt{2}} (a\ket{000} + a\ket{011} + b \ket{100} + b \ket{111})
+```
+```math
+(\textbf{H} \otimes \textbf{I} \otimes \textbf{I})  \frac{1}{\sqrt{2}} (a\ket{000} + a\ket{011} + b \ket{110} + b \ket{101})
+```
+```math
+\frac{1}{\sqrt{2}} (a\ket{000} + a\ket{011} + a\ket{100} + a\ket{111} + b \ket{010} + b \ket{001} - b \ket{110} - b \ket{101})
+```
+A z-basis measurement is performed on the source and  messenger qubits. These qubits are in one of four states:
+```math
+\ket{00}, \ket{01}, \ket{10}, \ket{11} 
+```
+and all are equally likely to be measured. Each of these measurements has a corresponding measurement value for the target qubit:
+```math
+a\ket{0} + b \ket{1}
+```
+```math
+b\ket{0} + a \ket{1}
+```
+```math
+a\ket{0} - b \ket{1}
+```
+```math
+-b\ket{0} + a \ket{1} 
+```
+The first state is exactly the source state. Each of the other states is the source state with a particulat gate applied: **I, X, Z, ZX**. Thus, in order to recover the original state, all that has to be done is to apply the appropriate rotations (using RF pulses in a nuclear spin quantum computer, for example) and the target will hold the original state exactly. 
 
 
