@@ -63,7 +63,7 @@ For n=three qubits, there are $2^n$ basis states:
 ```
 
 ## Unitary transformations or Gates
-Unitary Transformations, or Gates, are operatios performed on qubit states. The most basic gate is the Hadamard gate, H, which puts the state into superposition:
+Unitary Transformations, or Gates, are operations performed on qubit states. The most basic gate is the Hadamard gate, H, which puts the state into superposition:
 ```math
 \textbf{H} \ket{0} = \frac{1}{\sqrt{2}} (\ket{0} + \ket{1}) = \ket{+}  
 ```
@@ -155,7 +155,7 @@ In the x-basis this looks like:
 ```math
 \textbf{CNOT} \ket{--} =  \ket{+-}
 ```
-The **CNOT gate is its own inverse and self-adjoint.
+The **CNOT** gate is its own inverse and self-adjoint.
 
 ### The SWAP gate
 **SWAP** switches the states for two qubits. In the two-qubit basis, the only states affected are thus |01> and |10>:
@@ -218,21 +218,21 @@ Measurements can be carried out in different bases, and will thus have different
 qubit = \frac{1}{\sqrt{2}} (\ket{0} + \ket{1})
 ```
 ```math
-\text{Measure[PauliZ, qubit]} \to 0 (50\%) \text{and} 1 (50\%)
+\text{Measure[PauliZ, qubit]} \to 0 \text{ 50\% and } 1 \text{ 50\%}
 ```
 Phase does not affect the measurement:
 ```math
 qubit = \frac{1}{\sqrt{2}} (\ket{0} - \ket{1})
 ```
 ```math
-\text{Measure[PauliZ, qubit]} \to 0 (50\%) \text{and} 1 (50\%)
+\text{Measure[PauliZ, qubit]} \to 0 \text{ 50\% and } 1 \text{ 50\% }
 ```
 Measuring in the x-basis means that $\ket{+}$ and $\ket{-}$ are the observables, so a measurement of a qubit in the |0> state would collapse into either $\ket{+}$ or $\ket{-}$ with a 50/50 probability of each:
 ```math
 qubit = \ket{0}
 ```
 ```math
-\text{Measure[PauliX, qubit]} \to \ket{+} (50\%) \text{and} \ket{-} (50\%)
+\text{Measure[PauliX, qubit]} \to \ket{+} \text{ 50\% and } \ket{-} \text{50\%}
 ```
 Measurement results are classical bits.
 
