@@ -10,6 +10,7 @@ The easiest way to work with Q# is to install the Microsoft Azure Quantum extens
 - [Functions and Operations](#operations-and-functions)
 - [Loops and conditionals](#loops-and-conditionals)
 - [Running the code](#running-the-code)
+- [Sample Code](#sample-code)
 
 ## Program structure and namespaces
 You can start the program file (.qs extension) by definign a namespace for your work:
@@ -252,3 +253,4 @@ q1_X  0: 1001, 1: 0
 - B92 Quantum Key Distribution
 - EPR Quantum Key Distribution
 - Eigenvalue solving (quantum phase estimation)
+- Grover's algorithm for searching
