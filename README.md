@@ -10,7 +10,7 @@ See below for each section:
     
 - [Basics of Q# and sample code](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qsharp_basics.md)
 
-- [Basics of qiskit and sample code](
+- [Basics of qiskit and sample code](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qiskit_basics.md)
 
 - [Basics of cirq and sample code]
 
