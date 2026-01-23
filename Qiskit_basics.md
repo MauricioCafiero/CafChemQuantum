@@ -27,6 +27,8 @@ import numpy as np
 ```
 
 ## Circuits and gates
+**NOTE: Qiskit places qubits in reversed order, so $\ket{0}\ket{1}\ket{2}$ is represented in a Qiskit circuit as $\ket{2}\ket{1}\ket{0}$**
+
 - Circuits are created with the QuantumCircuit class:
 ```
 qc = QuantumCircuit(n, n)
