@@ -5,6 +5,7 @@
 - [Measurements and State functions](]measurements-and-state-functions)
 - [Simulations](#simulations)
 - [Draw Circuits](#draw-circuits)
+- [Sample Code](#code)
 
 ## Install
 To get the main tools needed for basic operation, first install:
@@ -103,3 +104,6 @@ qc_total.draw()
 ```
 <img width="192" height="101" alt="image" src="https://github.com/user-attachments/assets/edc409fa-a6d4-40af-8e4c-fff834b48004" />
 
+## Code
+
+- See a Jupyter notebook with entanglement, teleportation, and Grover's search algorithm examples [here](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/QC_Qiskit_CafChem.ipynb).
