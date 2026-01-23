@@ -11,6 +11,8 @@ See below for each section:
 - [Basics of Q# and sample code](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qsharp_basics.md)
 
 - [Basics of qiskit and sample code](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qiskit_basics.md)
+  
+- [Quantum Chemistry on Quantum Computers with Qiskit]
 
 - [Basics of cirq and sample code]
 
