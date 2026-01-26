@@ -12,6 +12,8 @@ See below for each section:
 
 - [Basics of qiskit and sample code](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qiskit_basics.md)
   
+- [Quantum Machine Learning](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qiskit_ML_CafChem.ipynb)
+  
 - [Quantum Chemistry on Quantum Computers with Qiskit]
 
 - [Basics of cirq and sample code]
