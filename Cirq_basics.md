@@ -2,7 +2,7 @@
 
 - [Install](#install)
 - [Circuits and Gates](#circuits-and-gates)
-- [Measurements and State functions](]measurements-and-state-functions)
+- [Measurements and State functions](#measurements-and-state-functions)
 - [Simulations](#simulations)
 - [Draw Circuits](#draw-circuits)
 - [Sample Code](#code)
