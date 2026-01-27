@@ -10,13 +10,13 @@ See below for each section:
     
 - [Basics of Q# and sample code](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qsharp_basics.md)
 
-- [Basics of qiskit and sample code](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qiskit_basics.md)
+- [Basics of Qiskit and sample code](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qiskit_basics.md)
+
+- [Basics of Cirq and sample code](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Cirq_basics.md)
   
 - [Quantum Machine Learning](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qiskit_ML_CafChem.ipynb) sample code with Qiskit.
-  
-- [Quantum Chemistry on Quantum Computers with Qiskit]
 
-- [Basics of cirq and sample code]
+- [Quantum Chemistry on Quantum Computers with Qiskit]
 
 
 
