@@ -72,7 +72,7 @@ Unitary Transformations, or Gates, are operations performed on qubit states. The
 ```
 The Hadamard gate is its own inverse and is self-adjoint. Further, we can say that the Hadamard gate transforms the z-basis into the x-basis.  
 
-The Pauli X gate (names for the Pauli X operator) flips each qubit into the opposite state:
+The Pauli X gate (named for the Pauli X operator) flips each qubit into the opposite state:
 ```math
 \textbf{X} (a\ket{0} + b \ket{1}) = a\ket{1} + b \ket{0}
 ```
@@ -81,7 +81,6 @@ The Pauli Z gate 'flips' the phase of a state, that is, it changes the sign on t
 \textbf{Z} (a\ket{0} + b \ket{1}) = a\ket{0} - b \ket{1}
 ```
 The Pauli Y gate is like a combination the bit flip of the X gate and the phase flip of the Z gate:
-The Pauli X gate (names for the Pauli X operator) flips each qubit into the opposite state:
 ```math
 \textbf{Y} (a\ket{0} + b \ket{1}) = ai\ket{1} - bi \ket{0}
 ```
