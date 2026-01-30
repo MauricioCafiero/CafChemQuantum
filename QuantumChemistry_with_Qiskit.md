@@ -11,3 +11,7 @@ where *n* is the number of electrons. In the second quantization formalism, we c
 ```
 where *m* is the number of orbitals,  $\hat{a}^{+}$ is a *creation operator* that puts an electron in an orbital, $\hat{a}$ is an *annihilation operator*
 that removes an electron from an orbital, and $h_{ij}$ and $g_{i,j,k,l}$ are one-electron hamiltonian and coulomb/exchange integrals over the orbitals.
+
+## Fermion to qubit operators
+
+## Variational Quantum Eigensolver
