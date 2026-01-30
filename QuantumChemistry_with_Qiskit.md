@@ -13,6 +13,7 @@ where *m* is the number of orbitals,  $\hat{a}^{+}$ is a *creation operator* tha
 that removes an electron from an orbital, and $h_{ij}$ and $g_{i,j,k,l}$ are one-electron hamiltonian and coulomb/exchange integrals over the orbitals.
 
 ## Fermion to qubit operators
+In the quantum computing formalism, the orbitals are described by quibts, so the operators acting on them hve to be *qubit operators*. 
 
 ## Coupled Cluster Ansatz
 
