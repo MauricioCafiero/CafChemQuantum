@@ -16,7 +16,7 @@ See below for each section:
   
 - [Quantum Machine Learning](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qiskit_ML_CafChem.ipynb) sample code with Qiskit.
 
-- [Quantum Chemistry on Quantum Computers with Qiskit](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qiskit_Chemistry_CafChem.ipynb) sample code.
+- [Quantum Chemistry on Quantum Computers with Qiskit](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/QuantumChemistry_with_Qiskit.md) theory and sample code.
 
 
 
