@@ -50,9 +50,35 @@ and so on. Other mappings would create slightly different results.
 ## Coupled Cluster Ansatz
 In coupled cluster theory, the wave function takes the form:
 ```math
-\ket{\psi_{CC}(\theta)} = e^{\hat{T}(\theta) - \hat{T}^{+}(\theta)} \ket{\psi_{HF}(\theta)}
+\ket{\psi_{CC}(\theta)} = e^{\hat{T}(\theta) - \hat{T}^{+}(\theta)} \ket{\psi_{Ref}(\phi)}
 ```
-If we consider Unitary Coupled Cluster with Single and Double excitations, the **T** operators become:
+where the reference wave function is a set of qubits with variational rotation angle parameters:
+```math
+\ket{\psi_{Ref}(\phi)} = \textbf{U}(\phi) \ket{0...n}
+```
+where $U(\phi)$ is a unitary operator with rotational angle parameters $\phi$, such as a combination of RX, RY and RZ gates.
+
+If we consider Unitary Coupled Cluster with Single and Double excitations, the **T** operator is made up of:
+```math
+\hat{T}_{1}(\theta) = \sum_{i; m} \theta_{i}^{m} \hat{a}_m^{+}\hat{a}_i
+```
+```math
+\hat{T}_{2}(\theta) = \frac{1}{2} \sum_{i,j; m,n} \theta_{i,j}^{m,n} \hat{a}_n^{+}\hat{a}_m^{+} \hat{a}_j \hat{a}_i
+```
+
+where *i* runs over occupied orbitals and *m* runs over unoccupied orbitals, and $\theta$ are the variational parameters. 
+
+$\ket{\psi_{CC}(\theta)}$ is then mapped into qubit operators using one of the mappings above.
 
 
 ## Variational Quantum Eigensolver
+
+To solve this on a quantum computer, the following steps are followed:
+- The wavefunction qubits and gates (circuit) are set up on the quantum computer.
+- The energy is calculated on the quantum computer by starting with a random set of parameters, applying the
+circuit representing the energy expectation value (in essence, $\ket{\psi} | \hat{H} | \ket{\psi}$) and performing a simulation to find
+the integrals.
+- The energy is calculatedon the classical computer, and the parameters optimization steps are performed.
+- Repeat until convergence.
+
+A practical example can be found in the [sample code]
