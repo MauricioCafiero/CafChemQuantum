@@ -76,9 +76,9 @@ $\ket{\psi_{CC}(\theta)}$ is then mapped into qubit operators using one of the m
 To solve this on a quantum computer, the following steps are followed:
 - The wavefunction qubits and gates (circuit) are set up on the quantum computer.
 - The energy is calculated on the quantum computer by starting with a random set of parameters, applying the
-circuit representing the energy expectation value (in essence, $\ket{\psi} | \hat{H} | \ket{\psi}$) and performing a simulation to find
+circuit representing the energy expectation value (in essence, $\bra{\psi} \hat{H} \ket{\psi}$) and performing a simulation to find
 the integrals.
-- The energy is calculatedon the classical computer, and the parameters optimization steps are performed.
+- The energy is calculated on the classical computer, and the parameters optimization steps are performed.
 - Repeat until convergence.
 
 A practical example can be found in the [sample code](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qiskit_Chemistry_CafChem.ipynb)
