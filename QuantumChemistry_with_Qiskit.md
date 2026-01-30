@@ -30,8 +30,7 @@ In the quantum computing formalism, the orbitals are described by quibts, so the
 
 \sigma^- \sigma^+ = \frac{1}{2} (\textbf{I} + \textbf{Z})   \hspace{2cm}   \text{remove particle} 
 ```
-There are sevral ways to map fermionic operators to qubit operators. Two mappings for systems with a one-to-one electron to qubit mapping are *Jordan-Wigner* and
-*Bravyi-Kitaev*. There is also the *Parity* mapping. Consider an example of the Jordan-Wigner mapping. For orbital 1 (numbered 0), the creation operator would be the same as above:
+where **X** and **Y** are the unitary gates described earlier. There are sevral ways to map fermionic operators to qubit operators. Two mappings for systems with a one-to-one electron to qubit mapping are *Jordan-Wigner* and *Bravyi-Kitaev*. There is also the *Parity* mapping. Consider an example of the Jordan-Wigner mapping. For orbital 1 (numbered 0), the creation operator would be the same as above:
 ```math
 
 \hat{a}^+_{0} = \frac{1}{2} (\textbf{X} - i \textbf{Y}) 
