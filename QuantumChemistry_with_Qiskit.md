@@ -81,4 +81,4 @@ the integrals.
 - The energy is calculatedon the classical computer, and the parameters optimization steps are performed.
 - Repeat until convergence.
 
-A practical example can be found in the [sample code]
+A practical example can be found in the [sample code](https://github.com/MauricioCafiero/CafChemQuantum/blob/main/Qiskit_Chemistry_CafChem.ipynb)
